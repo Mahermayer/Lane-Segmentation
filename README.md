@@ -218,16 +218,16 @@ Typical run outputs:
 
 The following table summarizes the completed `focal_dice` batch run stored under `outputs/`. These values came from each variant's `summary.json`, ranked by best validation mIoU.
 
-| Variant | Best Epoch | Best Val mIoU | Dice Score | Lane Pixel F1 | Boundary F1 |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| `full` | 38 | 0.9199 | 0.9541 | 0.9579 | 0.9782 |
-| `se_decoder` | 38 | 0.9191 | 0.9531 | 0.9576 | 0.9791 |
-| `depthwise_se` | 40 | 0.9184 | 0.9548 | 0.9578 | 0.9787 |
-| `se_aspp` | 35 | 0.9173 | 0.9526 | 0.9569 | 0.9783 |
-| `aspp` | 40 | 0.9102 | 0.9501 | 0.9520 | 0.9747 |
-| `depthwise_aspp` | 39 | 0.9085 | 0.9448 | 0.9463 | 0.9692 |
-| `depthwise` | 40 | 0.8937 | 0.9406 | 0.9397 | 0.9625 |
-| `vanilla` | 39 | 0.8922 | 0.9388 | 0.9403 | 0.9630 |
+| Variant | Best Val mIoU | Dice Score | Lane Pixel F1 | Boundary F1 | GFLOPs | Params (M) | Size (MB) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `full` | 0.9199 | 0.9541 | 0.9579 | 0.9782 | 3.18 | 1.17 | 4.83 |
+| `se_decoder` | 0.9191 | 0.9531 | 0.9576 | 0.9791 | 20.22 | 4.32 | 17.36 |
+| `depthwise_se` | 0.9184 | 0.9548 | 0.9578 | 0.9787 | 2.85 | 0.52 | 2.20 |
+| `se_aspp` | 0.9173 | 0.9526 | 0.9569 | 0.9783 | 20.56 | 4.98 | 19.99 |
+| `aspp` | 0.9102 | 0.9501 | 0.9520 | 0.9747 | 20.55 | 4.97 | 19.96 |
+| `depthwise_aspp` | 0.9085 | 0.9448 | 0.9463 | 0.9692 | 3.17 | 1.17 | 4.80 |
+| `depthwise` | 0.8937 | 0.9406 | 0.9397 | 0.9625 | 2.84 | 0.51 | 2.17 |
+| `vanilla` | 0.8922 | 0.9388 | 0.9403 | 0.9630 | 20.21 | 4.32 | 17.33 |
 
 A consolidated CSV for this run can be generated or inspected at `outputs/variant_comparison.csv`.
 
