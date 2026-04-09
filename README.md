@@ -1,7 +1,7 @@
 # Lane Segmentation using LaneNet
 
 Clean, reproducible  lane segmentation experiments with from the paper "Towards Context-Aware Autonomous Driving in
-Degraded Urban Environments using LaneNet" an explicit vanilla U-Net baseline and a configurable U-Net family for ablations. The refactor is organized as a normal Python package with YAML-driven experiments, deterministic train/val splitting, optional profiling, and a single shell command to launch all supported model variants.
+Degraded Urban Environments using LaneNet". This repo includes an explicit vanilla U-Net baseline and a configurable U-Net family for ablations. The refactor is organized as a normal Python package with YAML-driven experiments, deterministic train/val splitting, optional profiling, and a single shell command to launch all supported model variants.
 
 ## Features
 
@@ -231,10 +231,3 @@ The following table summarizes the completed `focal_dice` batch run stored under
 
 A consolidated CSV for this run can be generated or inspected at `outputs/variant_comparison.csv`.
 
-## Extending the Project
-
-Use the model registry in [src/duckietown_seg/models/__init__.py](/home/WVU-AD/ma00290/Downloads/Unet%20Train/src/duckietown_seg/models/__init__.py) to add future architectures:
-
-- add a new model class
-- register it in `MODEL_REGISTRY`
-- point a model YAML file at the new `model_name`
