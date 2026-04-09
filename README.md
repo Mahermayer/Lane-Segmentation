@@ -1,4 +1,4 @@
-# Duckietown Lane Segmentation
+# Lane Segmentation using LaneNet
 
 Clean, reproducible  lane segmentation experiments with from the paper "Towards Context-Aware Autonomous Driving in
 Degraded Urban Environments using LaneNet" an explicit vanilla U-Net baseline and a configurable U-Net family for ablations. The refactor is organized as a normal Python package with YAML-driven experiments, deterministic train/val splitting, optional profiling, and a single shell command to launch all supported model variants.
