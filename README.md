@@ -202,14 +202,6 @@ Each directory contains `run.log`, checkpoints, metrics CSV, config snapshot, an
 
 All variants use the same outer U-Net topology and default channel sizes so ablations remain fair unless you intentionally change the config.
 
-## Reproducibility Notes
-
-- The train/val split is deterministic through `dataset.split_seed`.
-- Global seeding is applied to Python, NumPy, and PyTorch.
-- cuDNN deterministic mode is enabled for reproducibility.
-- Models return logits, not probabilities.
-- Losses and metrics apply softmax only when needed.
-- No dataset paths are hardcoded in Python modules; configs control the dataset root.
 
 ## Outputs
 
