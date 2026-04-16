@@ -233,5 +233,5 @@ The following table summarizes the completed `focal_dice` batch run stored under
 | `depthwise` | 0.8937 | 0.9406 | 0.9397 | 0.9625 | 2.84 | 0.51 | 2.17 |
 | `vanilla` | 0.8922 | 0.9388 | 0.9403 | 0.9630 | 20.21 | 4.32 | 17.33 |
 
-A consolidated CSV for this run can be generated or inspected at `outputs/variant_comparison.csv`.
+A consolidated CSV for this run can be found at `outputs/variant_comparison.csv`.
 
