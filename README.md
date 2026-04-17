@@ -6,7 +6,7 @@ Degraded Urban Environments using LaneNet". This repo includes an explicit vanil
 
 ## Model Architecture
 
-![Lane-Net Architecture](lanenet.png)
+![Lane-Net Architecture](lanenet.jpg)
 ## Features
 
 - Explicit `vanilla_unet` baseline that returns logits only.
